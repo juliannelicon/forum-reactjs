@@ -10,7 +10,31 @@ export const Container = styled.div`
     > header {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+
+      h1 {
+        flex:1;
+        text-align:center;
+      }
+
+      > button {
+        max-width: 120px;
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: 600;
+
+        border: 0;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+
+        background: #1877F2;
+        color: #f1f2f3;
+
+        transition: filter 0.2s;
+
+        &:hover{
+          filter: brightness(0.9);
+        }
+      }
     }
   }
 `;
@@ -34,7 +58,7 @@ export const Question = styled.div`
     margin-left: 0.5rem;
     border-radius: 0.5rem;
 
-    background: #efefef;
+    background: #fff;
 
     header {
       display: flex;
@@ -53,15 +77,23 @@ export const Question = styled.div`
       margin: 0.5rem 0;
     }
 
-    footer {
-      display: flex;
+    > button {
+      max-width: 120px;
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 600;
 
-      button {
-        font-size: 0.8rem;
+      border: 0;
+      padding: 0.5rem 1rem;
+      border-radius: 0.25rem;
 
-        & + button {
-          margin-left: 0.5rem;
-        }
+      background: #1877F2;
+      color: #f1f2f3;
+
+      transition: filter 0.2s;
+
+      &:hover{
+        filter: brightness(0.9);
       }
     }
   }
@@ -87,10 +119,23 @@ export const CommentForm = styled.form<CommentFormProps>`
   }
 
   button {
-    max-width: 100px;
-    margin-top: 0.5rem;
+    max-width: 80px;
     text-align: center;
     font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+
+    background: #eee;
+
+    transition: filter 0.2s;
+
+    &:hover{
+      filter: brightness(0.9);
+    }
   }
 `;
 
@@ -124,17 +169,30 @@ export const AnswerForm = styled.div<AnswerFormProps>`
     margin-left: 0.5rem;
     border-radius: 0.5rem;
 
-    background: #efefef;
+    background: #fff;
 
     input {
       height: 5rem;
     }
 
-    button {
-      max-width: 100px;
-      margin-top: 0.5rem;
+    > button {
+      max-width: 80px;
       text-align: center;
       font-size: 0.8rem;
+      font-weight: 600;
+      margin-top: 0.5rem;
+
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 0.25rem;
+
+      background: #eee;
+
+      transition: filter 0.2s;
+
+      &:hover{
+        filter: brightness(0.9);
+      }
     }
   }
 `;

@@ -36,17 +36,13 @@ const Dashboard: React.FC = () => {
 
             <p>Qual o melhor framework front-end react.js, vue ou angular?</p>
 
-            <footer>
-              <button type="button" onClick={handleOpenComment}>
-                Responder
-              </button>
-            </footer>
+            <button type="button" onClick={handleOpenComment}>
+              RESPONDER
+            </button>
 
             <CommentForm isOpenComment={isOpenComment}>
               <input type="text"/>
-              <footer>
-                <button>ENVIAR</button>
-              </footer>
+              <button>ENVIAR</button>
             </CommentForm>
           </div>
         </Question>

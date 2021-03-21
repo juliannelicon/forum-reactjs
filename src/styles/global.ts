@@ -18,7 +18,7 @@ export const GlobalStyle  = createGlobalStyle`
   }
 
   body {
-    background: var(--background);
+    background: #f1f2f3;
     -webkit-font-smoothing: antialiased;
 
     font-family: Arial, Helvetica, sans-serif;
